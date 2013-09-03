@@ -1,0 +1,6 @@
+target remote 10.10.10.1:20000
+set sysroot /repos2/cm9/out/target/product/toro/symbols/
+set solib-absolute-prefix /repos2/cm9/out/target/product/toro/symbols/
+set solib-search-path /repos2/cm9/out/target/product/toro/symbols/sbin
+set solib-search-path /repos2/cm9/out/target/product/toro/symbols/system/lib
+directory /repos2/cm9
