@@ -1,0 +1,10 @@
+target remote 127.0.0.1:20000
+set arch aarch64
+set debug aarch64
+set sysroot /builds/omni-9.0/out/target/product/marlin/symbols/recovery/root/
+set solib-absolute-prefix /builds/omni-9.0/out/target/product/marlin/symbols/
+set solib-search-path /builds/omni-9.0/out/target/product/marlin/symbols/recovery/root/sbin/:/builds/omni-9.0/out/target/product/flame/symbols/system/lib64/:/builds/omni-9.0/out/target/product/flame/symbols/system/bin/
+directory /builds/omni-9.0
+#set follow-fork-mode child
+set follow-fork-mode parent
+#b bootable/recovery/crypto/fscrypt/Decrypt.cpp:740
